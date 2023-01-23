@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ecf0f1;
+  position: relative;
+  z-index: 111;
+}
+
+.offer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1c40f;
+  color: #333;
+  font-weight: 500;
+  overflow: hidden;
+  font-size: 35px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.offer p {
+  position: absolute;
+}
+
+span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #01411c;
+}
+
+.keyModal {
+  min-width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+.pressed__key {
+  font-size: 80px;
+  font-weight: 600;
+  color: #01411c;
+}
+
+.key__title {
+  font-size: 17px;
+  font-weight: 600;
+  color: red;
+}
+
+.keys {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+#keys__item {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.item3 {
+  position: relative;
+}
+.item3 #location {
+  position: absolute;
+  top: 42%;
+}
+
+.dump__scroll {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: scroll; */
+  font-family: PT Mono, monospace;
+  font-size: 12px;
+  font-weight: 200;
+  cursor: text;
+}
+
+.name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #216fa3;
+  color: #ecf0f1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#keys__item {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.events {
+  font-size: 14px;
+  color: rgb(36, 35, 35);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1040px) {
+  #home::after {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 22px;
+    content: 'ekran hajmi kichikligi sababidan siz saytdan to`liq foydalana olmaysiz';
+    background-color: #2e86c1;
+  }
+
+  .keys,
+  .offer,
+  .keyModal {
+    display: none;
+  }
+}
+@media screen and (min-width: 1040px) and (max-width:1300px) {
+  #key{
+    font-size: 20px;
+  }
+  .events{
+    font-size: 12px;
+  }
+}
